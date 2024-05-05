@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Plato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS para estilos -->
+    <script src="precios.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../../img/logo.png" alt="Logo de la Empresa"> <!-- Aquí puedes agregar tu logo -->
+           
+            <h1>Detalles del Plato</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="detalles">
+            <div class="plato">
+                <img src="../../img/focacio.jpg" alt="">
+            </div>
+            <form>
+                <label for="salsa">Selecciona el tipo de massa:</label>
+                <select id="salsa" name="salsa">
+                    <option value="Salsa Alfredo">Normal</option>
+                    <option value="Salsa Marinara">Sin Gluten</option>
+                    <option value="Salsa Pesto">Massa Vagana</option>
+                </select><br>
+                <label for="hora">Hora de Recogida:</label>
+                <input type="time" id="hora" name="hora" required><br>
+                <p>Precio:</p>
+                <div id="precio">Precio base: €8</div>
+                <a href="../ordenar pedido/index.html" class="button primary">Confirmar Pedido</a>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Volver al <a href="../../index.html">Menú</a></p>
+        </div>
+    </footer>
+</body>
+</html>

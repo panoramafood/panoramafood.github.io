@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Plato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS para estilos -->
+    <script src="precios.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../../img/logo.png" alt="Logo de la Empresa"> <!-- Aquí puedes agregar tu logo -->
+            
+            <h1>Detalles del Plato</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="detalles">
+            <div class="plato">
+                <img src="../../img/istockphoto-155249589-612x612.jpg" alt="">
+            </div>
+            <form>
+                
+                <label for="tipo_pasta">Selecciona el tipo de pasta:</label>
+                <select id="tipo_pasta" name="tipo_pasta">
+                    <option value="Spaghetti">Normal</option>
+                    <option value="Fettuccine">Sin Gluten</option>
+                    <option value="Penne">Vegana</option>
+                </select><br>
+
+                <label for="salsa">Selecciona el tipo de salsa:</label>
+                <select id="salsa" name="salsa">
+                    <option value="Salsa Alfredo">Salsa Bolonyesa</option>
+                    <option value="Salsa Marinara">Salsa Formatge</option>
+                    <option value="Salsa Pesto">Salsa Gambes</option>
+                    <option value="Salsa Pesto">Salsa de Sepia</option>
+                    <option value="Salsa Pesto">Salsa Picant</option>
+                </select><br>
+                <label for="hora">Hora de Recogida:</label>
+                <input type="time" id="hora" name="hora" required><br>
+                <p>Precio:</p>
+                <div id="precio">Precio base: €8</div>
+                <a href="../ordenar pedido/index.html" class="button primary">Confirmar Pedido</a>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Volver al <a href="../../index.html">Menú</a></p>
+        </div>
+    </footer>
+</body>
+</html>
